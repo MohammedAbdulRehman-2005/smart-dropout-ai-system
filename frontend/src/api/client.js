@@ -2,12 +2,11 @@ import axios from 'axios';
 
 const client = axios.create({
   baseURL: 'http://localhost:8000',
-  headers: {
-    'Content-Type': 'application/json',
-  },
+  headers: { 'Content-Type': 'application/json' },
+  timeout: 60000, // 60s timeout for model training
 });
 
-// Add a request interceptor to inject the JWT token
+// ── Request interceptor: inject JWT ──────────────────────────
 client.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -16,7 +15,19 @@ client.interceptors.request.use(
     }
     return config;
   },
+  (error) => Promise.reject(error)
+);
+
+// ── Response interceptor: handle auth errors ─────────────────
+client.interceptors.response.use(
+  (response) => response,
   (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user_role');
+      localStorage.removeItem('user_name');
+      window.location.href = '/login';
+    }
     return Promise.reject(error);
   }
 );
