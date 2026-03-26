@@ -1,0 +1,12 @@
+student_id,full_name,grade,age,gender,section,family_income_level,parents_education,single_parent,has_disability,distance_from_school_km,guardian_name,guardian_phone,guardian_email
+STU1000,Arjun Sharma,10,16,Male,A,low,secondary,True,False,8.5,Parent of Arjun,9876543210,parent_stu1000@example.com
+STU1001,Priya Patel,9,15,Female,B,low,primary,False,False,12.3,Parent of Priya,9876543211,parent_stu1001@example.com
+STU1002,Rohit Kumar,11,17,Male,A,low,none,True,True,5.2,Parent of Rohit,9876543212,parent_stu1002@example.com
+STU1003,Anita Singh,8,14,Female,C,medium,secondary,False,False,3.1,Parent of Anita,9876543213,parent_stu1003@example.com
+STU1004,Mohammed Ali,10,16,Male,B,low,primary,True,False,9.7,Parent of Mohammed,9876543214,parent_stu1004@example.com
+STU1005,Deepika Reddy,12,18,Female,A,medium,graduate,False,False,2.4,Parent of Deepika,9876543215,parent_stu1005@example.com
+STU1006,Sanjay Gupta,9,15,Male,D,medium,secondary,False,False,4.8,Parent of Sanjay,9876543216,parent_stu1006@example.com
+STU1007,Kavitha Nair,11,17,Female,B,high,graduate,False,False,1.5,Parent of Kavitha,9876543217,parent_stu1007@example.com
+STU1008,Vikas Tiwari,8,14,Male,A,low,none,True,False,11.2,Parent of Vikas,9876543218,parent_stu1008@example.com
+STU1009,Sunita Devi,10,16,Female,C,low,primary,True,True,7.8,Parent of Sunita,9876543219,parent_stu1009@example.com
+STU1010,Rahul Mehta,12,18,Male,A,high,graduate,False,False,0.8,Parent of Rahul,9876543220,parent_stu1010@example.com
